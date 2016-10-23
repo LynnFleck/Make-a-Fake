@@ -13,3 +13,87 @@
  *= require_tree .
  *= require_self
  */
+
+* {
+  box-sizing: border-box;
+}
+.clearfix:after {
+   visibility: hidden;
+   display: block;
+   font-size: 0;
+   content: " ";
+   clear: both;
+   height: 0;
+}
+
+body {
+  background-color: #eee;
+  font-family: sans-serif;
+}
+h1 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 3em;
+}
+h2 {
+  font-weight: 400;
+  font-size: 1.5em;
+  background: #999;
+  margin: 0;
+  padding: 10px;
+  color: #eee;
+  border-radius: 6px;
+}
+p {
+  font-style: italic;
+  font-family: serif;
+  margin: 0;
+  margin: 15px 10px;
+}
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  margin: 10px;
+}
+button a {
+  text-decoration: none;
+  color: #666;
+}
+.faker-preview {
+  width: 31.333%;
+  float: left;
+  border: 1px #666 solid;
+  border-radius: 10px;
+  margin: 10px 1%;
+  padding: 20px;
+  background-color: #fff;
+}
+.my-avatar {
+  width: 50%;
+  margin: 0;
+  float: right;
+}
+.one-faker {
+  background-color: #fff;
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 20px;
+}
+.one-faker img {
+
+}
+.faker-headshot {
+  border-radius: 50%;
+  margin: 20px;
+  float: right;
+}
+
+@media (max-width: 1024px) {
+  .faker-preview {
+    width: 48%;
+  }
+
+}
+
+}
