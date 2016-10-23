@@ -1,8 +1,13 @@
 class Api::V1::FakersController < ApplicationController
+  before_action :get_faker, only: [:show]
 
   def index
     @fakers = Faker.all
-    render json: fakers
+    render json: @fakers
+  end
+
+  def show
+    render json: @faker
   end
 
   def create
@@ -18,6 +23,10 @@ class Api::V1::FakersController < ApplicationController
 
   def faker_params
     params.require(:faker).permit(:name, :avatar, :color, :title, :email, :food)
+  end
+
+  def get_faker
+    @faker ||= Faker.find(params[:id])
   end
 
 end
