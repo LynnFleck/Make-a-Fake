@@ -17,6 +17,7 @@ This Ruby on Rails application uses the Ruby gem FFaker to populate a fun and fa
 * Ruby version 2.2.3
 
 * [FFaker](https://github.com/ffaker/ffaker/blob/master/REFERENCE.md#ffakerfood) Ruby gem
+
 For this api, the following info types were used:
 * FFaker::Name 
 * FFaker::Avatar 
